@@ -2,7 +2,7 @@ return {
   "telescope.nvim",
   keys = {
     { "<leader>fz", "<cmd>Telescope zoxide list<cr>", desc = "find zoxide list" },
-    { "<leader>fc", "<cmd>Telescope colorscheme<cr>", desc = "find colorscheme" },
+    { "<leader>fC", "<cmd>Telescope colorscheme<cr>", desc = "find colorscheme" },
     { "<leader>fk", "<cmd>Telescope keymaps<cr>", desc = "find keymaps" },
     { "<leader>sk", "<cmd>Telescope colorscheme<cr>", desc = "find keymaps" },
     { "<leader>sg", false },
