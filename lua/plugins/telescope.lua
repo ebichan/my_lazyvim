@@ -7,6 +7,7 @@ return {
     { "<leader>sk", "<cmd>Telescope colorscheme<cr>", desc = "find keymaps" },
     { "<leader>sg", false },
     { "<leader>fw", "<cmd>Telescope live_grep<cr>", desc = "Grep (cwd)" },
+    { "gh", "<cmd>Telescope lsp_references<cr>", desc = "References" },
   },
   dependencies = {
     {
