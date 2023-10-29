@@ -13,7 +13,13 @@ return {
     opts = {
       ---@type table<string, conform.FormatterUnit[]>
       formatters_by_ft = {
-        python = { "black", "isort" },
+        python = { "ruff_format", "ruff_fix" },
+      },
+      formatters = {
+        ruff_fix = {
+          inherit = true,
+          args = { "--fix", "--select", "I", "-e", "-n", "--stdin-filename", "$FILENAME", "-" },
+        },
       },
     },
   },
