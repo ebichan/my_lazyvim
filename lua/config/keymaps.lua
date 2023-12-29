@@ -9,3 +9,6 @@ vim.keymap.set("n", "<C-\\>", "<Cmd>ToggleTerm direction=horizontal<CR>", { desc
 vim.keymap.set("i", "<A-d>", "<Cmd>ToggleTerm<CR>", { desc = "terminal : float" })
 vim.keymap.set("t", "<A-d>", "<Cmd>ToggleTerm<CR>", { desc = "terminal : float" })
 vim.keymap.set("n", "<A-d>", "<Cmd>ToggleTerm direction=float<CR>", { desc = "terminal : float" })
+
+-- skkeleton
+-- vim.keymap.set("i", "<C-j>", vim.fn["call skkeleton#handle('enable', {})<CR>"])
