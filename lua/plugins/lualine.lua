@@ -3,6 +3,7 @@ return {
   "nvim-lualine/lualine.nvim",
   event = "VeryLazy",
   opts = function(_, opts)
+    opts.theme = "night-owl"
     opts.sections.lualine_x = { "encoding", "fileformat" }
     opts.sections.lualine_y = { "progress" }
     opts.sections.lualine_z = { "location" }

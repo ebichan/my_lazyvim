@@ -2,7 +2,7 @@ return {
   "hrsh7th/nvim-cmp",
   dependencies = {
     "hrsh7th/cmp-emoji",
-    "uga-rosa/cmp-skkeleton",
+    -- "uga-rosa/cmp-skkeleton",
   },
   ---@param opts cmp.ConfigSchema
   opts = function(_, opts)
@@ -14,7 +14,7 @@ return {
 
     local luasnip = require("luasnip")
     local cmp = require("cmp")
-    opts.sources = cmp.config.sources(vim.list_extend(opts.sources, { { name = "emoji" }, { name = "skkeleton" } }))
+    opts.sources = cmp.config.sources(vim.list_extend(opts.sources, { { name = "emoji" } }))
 
     opts.mapping = vim.tbl_extend("force", opts.mapping, {
       ["<Tab>"] = cmp.mapping(function(fallback)

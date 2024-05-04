@@ -1,10 +1,7 @@
 return {
   {
-    "simrat39/symbols-outline.nvim",
-    keys = {
-      { "<leader>cs", false },
-      { "go", "<cmd>SymbolsOutline<cr>", desc = "Symbols Outline" },
-    },
+    "hedyhli/outline.nvim",
+    keys = { { "go", "<cmd>Outline<cr>", desc = "Toggle Outline" } },
   },
   {
     "dnlhc/glance.nvim",
