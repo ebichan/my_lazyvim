@@ -17,12 +17,16 @@ return {
     -- in your blink configuration
     keymap = {
       preset = "enter",
-      ["<TAB>"] = { "select_next", "fallback" },
-      ["<S-TAB>"] = { "select_prev", "fallback" },
+      ["<Tab>"] = { "select_next", "fallback" },
+      ["<S-Tab>"] = { "select_prev", "fallback" },
+      -- ["<CR>"] = { "accept", "fallback" },
     },
     completion = {
+      documentation = {
+        auto_show = false,
+      },
       menu = { enabled = true },
-      list = { selection = { preselect = true }, cycle = { from_top = true } },
+      list = { selection = { preselect = true, auto_insert = true }, cycle = { from_top = true } },
     },
   },
 }
